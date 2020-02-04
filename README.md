@@ -3,8 +3,8 @@
 ### Build CI    
 Une build CI (continuous intégration) à pour objectif de publier la version de l'application sur le nexus si un nouveau tag existe sur la branch qui est utilisé par la build, et pour créér un artifact, qui n'est ni plus ni moins qu'une archive zip contenant les fichiers nécéssaire au lancement de l'application en mode production. 
 
-1.La tache "mvn clean package" effacer tous les éléments générés lors des exécutions précédentes, compile le code source du projet avec exécution des tests, et enfin génère l'artéfact.
-2.La tache "Copy files to" copie l'exécutable (jar, war, ear) ainsi que les fichiers de configuration dans le répertoire d'artéfact.
+1.La tache "mvn clean package" effacer tous les éléments générés lors des exécutions précédentes, compile le code source du projet avec exécution des tests, et enfin génère l'artéfact.<br/>
+2.La tache "Copy files to" copie l'exécutable (jar, war, ear) ainsi que les fichiers de configuration dans le répertoire d'artéfact.<br/>
 3.La tache "Publish Artifact" récupère le dossier d'artifact (contenant l'exécutable de l'application et les fichiers de configuration) et le publie dans Azure Pipeline.
 
 # Génération de la documentation pickles
