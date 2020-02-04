@@ -16,8 +16,8 @@ Une build CI (continuous intégration) à pour objectif de publier la version de
 ### Build PR 
 La build de PR (pull request), doit être lancée automatiquement dès qu'une pull request est créée sur les branches develop et master. Elle permet de lancer tous les tests du projet, de vérifier que la couverture de test n'est pas passé en dessous du seuil défini (généralement à 80% minimum sur le coverage statements)
 
-1.La tache "mvn clean package" effacer tous les éléments générés lors des exécutions précédentes, compile le code source du projet avec exécution des tests, et enfin génère l'artéfact
-2.La tache "Task group: SonarQube6_7 for JAVA" est un ensemble de taches permettant de générer et publier le rapport sonar
+1.La tache "mvn clean package" effacer tous les éléments générés lors des exécutions précédentes, compile le code source du projet avec exécution des tests, et enfin génère l'artéfact.<br/>
+2.La tache "Task group: SonarQube6_7 for JAVA" est un ensemble de taches permettant de générer et publier le rapport sonar.<br/>
 
 
 
@@ -29,9 +29,9 @@ Configurer le lancement d'une build PR pour les pull request sur develop (à fai
 ### Build SEC
 La build SEC (pour securité), permet de générer chaque jour les rapport Checkmarx (analyse de sécurité static du code) et LifeCycle (analyse de sécurité sur les dépendances du projet.
 
-1.La tache "Security static source code analysis" génére le rapport Checkmarx et le publie
-2.La tache "mvn clean package" effacer tous les éléments générés lors des exécutions précédentes, compile le code source du projet avec exécution des tests, et enfin génère l'artéfact
-3.La tache "Nexus LifeCycle analysis" génère le rapport LifeCycle et le publie
+1.La tache "Security static source code analysis" génére le rapport Checkmarx et le publie.<br/>
+2.La tache "mvn clean package" effacer tous les éléments générés lors des exécutions précédentes, compile le code source du projet avec exécution des tests, et enfin génère l'artéfact.<br/>
+3.La tache "Nexus LifeCycle analysis" génère le rapport LifeCycle et le publie.<br/>
 
 
 PS: Il est nécessaire de télécharger les dépendances du projet avec mvn package avant de lance l'analyse LifeCycle
