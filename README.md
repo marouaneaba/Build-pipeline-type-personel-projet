@@ -7,7 +7,7 @@ Une build CI (continuous intégration) à pour objectif de publier la version de
 2.La tache "Copy files to" copie l'exécutable (jar, war, ear) ainsi que les fichiers de configuration dans le répertoire d'artéfact.<br/>
 3.La tache "Publish Artifact" récupère le dossier d'artifact (contenant l'exécutable de l'application et les fichiers de configuration) et le publie dans Azure Pipeline.
 
-# Génération de la documentation pickles
+######## Génération de la documentation pickles
 
 1.La tache "Pickles Documentation Generator" génére la documentation à partir des tests Gherkin de l'application.
 2.La tache "Publish Artifact" récupère les fichiers pickels généré précédemment et les publies dans Azure Pipeline
